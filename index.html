@@ -1,0 +1,101 @@
+<Doctype.html>
+<html>
+<head></head>
+<title>Html Program</title>
+<body>
+    <h1>Jagadeesh Velivela</h1>
+    </h6>Tirupati is my favourite place to buy a food</h6>  
+    <p>
+        Tirupati, an ancient town at the southern end of Andhra Pradesh,
+        is a pilgrim’s paradise. The place is famous for its many Hindu shrines; 
+        the most people are called as Sri Venkateswara Swamy or Tirupati Balaji temple.
+        Devotees from different parts of India and abroad visit this temple Lord Sri Govindaraja Swamy Temple and near to Sri Kapliswaraswamy Temple 
+        the other names of Tirupati is Kaliyuga Vaikuntha
+        <br>
+        <b>1.Tirupati is the Richest temple in the world</b>
+        <br>
+        <b>2.Tirupati is best piligrim place in Andhra Pradesh</b>
+    </p>
+   <p>RENUGUNTLA Airport is the nearest airport to hotel where I can get all the food stuff that i love</p>
+<ol>
+<li> The closest one is SWAGATH HOTEL from Airport</li>
+<li>Take a free right to the bezz circle</li>
+<li> Exit Outer Ring Road to NH5 highway</li>
+<li>After 20 Kilometers You will enter NH5</li>
+<li>You can contiue upto 170 Kilometers on NH5</li>
+ <li>When you are approching renuguntla you will be able to see direction to enter mg Outer Ring Road Take the free left when see the directions on the highway to mg Outer ring road.exit the Outer Ring Road on to exit no 20, this will take you to the Airport.</li></ol>
+</li>
+</ol>
+<br>
+<p>Food recommendations for others</p>
+    <ul>
+        <li>Gongora biryani</li>
+       <li> Guntur gongora</li>
+        <li>Guntur Chicken</li>
+        <li>vijayawada biryani</li>
+        <li>bheemavaram fish</li>
+    </ul>
+
+   <br>>
+<p>Sports Recommendations
+The below table indicates the sports activity that I would like to recommend others to participate
+and which is the best place to try and how much it would cost to by the equipment for the sport activity</p>
+
+<h2>A basic HTML table</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Sport</th>
+    <th>Place</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Cricket</td>
+    <td>firozshah Stadium</td>
+    <td>$40</td>
+  </tr>
+  <tr>
+    <td>Volley ball</td>
+    <td>NTR Stadium</td>
+    <td>$40</td>
+  </tr>
+</table>
+
+
+
+<br>
+<h1>Disjoint Set Union</h1>
+<p>make_set(v) - creates a new set consisting of the new element v
+union_sets(a, b) - merges the two specified sets (the set in which the element a is located,
+ and the set in which the element b is located)
+find_set(v) - returns the representative (also called leader) of the set that contains the element v.
+ This representative is an element of its corresponding set. It is selected in each set by the data structure itself 
+ (and can change over time, namely after union_sets calls). This representative can be used to check if two elements are part of the same set or not. 
+ a and b are exactly in the same set, if find_set(a) == find_set(b). Otherwise they are in different sets.
+</p>
+<pre>
+void make_set(int v) {
+    parent[v] = v;
+}
+
+int find_set(int v) {
+    if (v == parent[v])
+        return v;
+    return find_set(parent[v]);
+}
+
+void union_sets(int a, int b) {
+    a = find_set(a);
+    b = find_set(b);
+    if (a != b)
+        parent[b] = a;
+}
+</pre>
+</body>
+</html>
+
+
+
+
+
+
